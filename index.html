@@ -54,10 +54,10 @@
 
     <!-- Seção 'TEASER' -->
     <section id="teaser">
-        <h2>TEASER</h2>
-        <video controls aria-label="Teaser do espetáculo">
-            <source src="content/teaser.mp4" type="video/mp4">
-        </video>
+      <h2>TEASER</h2>
+      <video controls aria-label="Teaser do espetáculo">
+          <source src="content/teaser.mp4" type="video/mp4">
+      </video>
        
     </section>
 
@@ -67,12 +67,44 @@
         <div class="fotos-container">
             <p>Os atores tiram fotos com o público ao final de cada sessão. Procure suas fotos e marque nossa página nas redes sociais.</p>
         </div>
-        <div class="fotos-grid">
-            <a href="fotos.html" class="foto-button"></a>
-                <img src="icons/localizador.png" alt="Foto com o público">
-                <span>Clique para ver a galeria</span>
-            </a>
+        <div class="fotos-grid fotos-btn" id="abrir">
+            <img src="icons/localizador.png" alt="Foto com o público">
+            <span>Clique para ver a galeria</span>
             <!-- Adicione mais imagens conforme necessário -->
+        </div>
+        <!-- Carrossel de imagens -->
+        <div class="container-modal-desativado" id="container-modal">
+          <div class="modal">
+            <button id="fechar">
+              X
+            </button>
+
+            <div class="carrossel" data-carrossel>
+              <button class="botao-carrossel anterior" data-carrossel-botao="anterior"><</button>
+              <button class="botao-carrossel proximo" data-carrossel-botao="proximo">></button>
+              <ul data-slides>
+                <li class="slide" data-ativo>
+                  <img src="images/foto1.jpg" alt="">
+                </li>
+                <li class="slide">
+                  <img src="images/foto2.jpg" alt="">
+                </li>
+                <li class="slide">
+                  <img src="images/foto3.jpg" alt="">
+                </li>
+                <li class="slide">
+                  <img src="images/foto4.jpg" alt="">
+                </li>
+                <li class="slide">
+                  <img src="images/foto5.jpg" alt="">
+                </li>
+                <li class="slide">
+                  <img src="images/foto6.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+
+          </div>
         </div>
     </section>
 
@@ -100,5 +132,7 @@
     <footer>
         <p>&copy; 2024 DuplaFace Cia Teatral. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

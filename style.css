@@ -284,8 +284,88 @@ nav a:hover {
     padding-right: 20px;
 }
 
-.fotos-container .btn {
-    text-align: right;
+#fotos .fotos-btn {
+  cursor: pointer;
+}
+
+/* Carrossel de fotos */
+
+.container-modal-desativado {
+  display: none;
+}
+
+.container-modal-ativado{
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 1;
+  pointer-events: auto;
+  top: 0;
+  left: 0;
+  height: 50vw;
+  width: 100vw;
+}
+
+.modal {
+  background-color: #fff;
+}
+
+.modal #fechar {
+  position: absolute;
+  top: 55px;
+  right: 430px;
+  z-index: 2;
+  font-size: 2em;
+  border: 0;
+  background: rgba(0, 0, 0, .2);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.carrossel {
+  width: 45vw;
+  height: 45vh;
+  position: relative;
+  bottom: 207px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.slide[data-ativo] {
+  opacity: 1;
+}
+
+.botao-carrossel {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 100%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .8);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.botao-carrossel:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.botao-carrossel.anterior{
+  left: 1rem;
+}
+
+.botao-carrossel.proximo{
+  right: 1rem;
 }
 
 /* Estilos para a seção 'CONTATO' */
