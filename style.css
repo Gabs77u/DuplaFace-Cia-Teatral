@@ -436,6 +436,16 @@ nav a:hover {
     opacity: 0.9;
 }
 
+#contato .container-instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contato .instagram {
+  width: 50px;
+}
+
 /* Estilos para o rodapé */
 footer {
     background-color: #d1c4e9;
