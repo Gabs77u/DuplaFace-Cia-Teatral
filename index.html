@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Metadados e links de estilo -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DuplaFace Cia Teatral</title>
+    <meta name="description" content="Site oficial da DuplaFace Cia Teatral, uma companhia de teatro fundada por Alan Beltrão e Gabriel Cabral.">
+    <meta name="keywords" content="teatro, DuplaFace, companhia teatral, espetáculos, cultura">
+    <meta name="author" content="DuplaFace Cia Teatral">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- Banner Personalizado -->
@@ -14,7 +19,7 @@
 
     <!-- Cabeçalho com barra de navegação -->
     <header>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#em-cartaz">EM CARTAZ</a></li>
@@ -53,8 +58,8 @@
     </section>
 
     <!-- Seção 'TEASER' -->
-    <section id="teaser">
-      <h2>TEASER</h2>
+    <section id="teaser" aria-labelledby="teaser-heading">
+      <h2 id="teaser-heading">TEASER</h2>
       <video controls aria-label="Teaser do espetáculo">
           <source src="content/teaser.mp4" type="video/mp4">
       </video>
@@ -74,44 +79,40 @@
       </div>
     </section>
 
-        <!-- Carrossel de imagens -->
-        <div class="container-modal-desativado" id="container-modal">
-          <div class="modal">
-            <button id="fechar">
-              X
-            </button>
-
-            <div class="carrossel" data-carrossel>
-              <button class="botao-carrossel anterior" data-carrossel-botao="anterior"><</button>
-              <button class="botao-carrossel proximo" data-carrossel-botao="proximo">></button>
-              <ul data-slides>
-                <li class="slide" data-ativo>
-                  <img src="images/foto1.jpg" alt="">
-                </li>
-                <li class="slide">
-                  <img src="images/foto2.jpg" alt="">
-                </li>
-                <li class="slide">
-                  <img src="images/foto3.jpg" alt="">
-                </li>
-                <li class="slide">
-                  <img src="images/foto4.jpg" alt="">
-                </li>
-                <li class="slide">
-                  <img src="images/foto5.jpg" alt="">
-                </li>
-                <li class="slide">
-                  <img src="images/foto6.jpg" alt="">
-                </li>
-              </ul>
-            </div>
-
-          </div>
+    <!-- Carrossel de imagens -->
+    <div class="container-modal-desativado" id="container-modal">
+      <div class="modal">
+        <button id="fechar">X</button>
+        <div class="carrossel" data-carrossel>
+          <button class="botao-carrossel anterior" data-carrossel-botao="anterior"><</button>
+          <button class="botao-carrossel proximo" data-carrossel-botao="proximo">></button>
+          <ul data-slides>
+            <li class="slide" data-ativo>
+              <img src="images/foto1.jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="images/foto2.jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="images/foto3.jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="images/foto4.jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="images/foto5.jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="images/foto6.jpg" alt="">
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
 
     <!-- Seção 'CONTATO' -->
-    <section id="contato">
-        <h2>CONTATO</h2>
+    <section id="contato" aria-labelledby="contato-heading">
+        <h2 id="contato-heading">CONTATO</h2>
         <form action="submit_form.php" method="post">
             <div>
                 <label for="nome">Nome:</label>
@@ -139,8 +140,10 @@
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 DuplaFace Cia Teatral. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Alan Beltrão, Carlos Severiano e Gabriel Araujo</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Inclusão do script -->
+    <script src="scripts/script.js"></script>
 </body>
 </html>

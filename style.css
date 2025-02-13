@@ -1,3 +1,4 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 /* Reset de estilos e configuração de fontes */
@@ -9,7 +10,6 @@
 }
 
 body {
-    /* line-height: 1.6; */
     background-color: #d1c4e9;
     font-size: 16px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -31,6 +31,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    loading: lazy; /* Adicionar carregamento preguiçoso */
 }
 
 /* Estilos para o banner */
@@ -75,12 +76,8 @@ nav a:hover {
 #sobre-nos {
   display: flex;
   justify-content: center;
-    padding: 50px 40px;
-    background-color: #fff;
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: flex-start; */
-    /* gap: 40px; */
+  padding: 50px 40px;
+  background-color: #fff;
 }
 
 #sobre-nos .content {
@@ -88,8 +85,6 @@ nav a:hover {
   display: flex;
   justify-content: center;
   gap: 30px;
-  /* flex: 1; */
-    /* max-width: 1000px; */
 }
 
 #sobre-nos h2 {
@@ -118,9 +113,25 @@ nav a:hover {
 @media (max-width: 768px) {
     #sobre-nos {
         flex-direction: column;
+        padding: 20px;
     }
     
-    #sobre-nos .icon {
+    #sobre-nos .content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #sobre-nos h2 {
+        text-align: center;
+    }
+    
+    #sobre-nos p {
+        text-align: center;
+    }
+    
+    #sobre-nos img {
+        width: 150px;
         margin-top: 20px;
     }
 }
@@ -195,7 +206,6 @@ nav a:hover {
     width: 100%;
     max-width: 500px;
     height: auto;
-    /* border-radius: 10px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     display: block;
@@ -203,11 +213,16 @@ nav a:hover {
 
 @media (max-width: 768px) {
     #em-cartaz {
+        flex-direction: column;
         padding: 20px;
     }
     
-    #em-cartaz h2 {
-        font-size: 2.5em;
+    #em-cartaz .info {
+        max-width: 100%;
+    }
+    
+    #em-cartaz .banner img {
+        max-width: 100%;
     }
 }
 
@@ -240,15 +255,22 @@ nav a:hover {
     outline-offset: 4px;
 }
 
+@media (max-width: 768px) {
+    #teaser {
+        width: 100%;
+    }
+    
+    #teaser video {
+        max-width: 100%;
+    }
+}
+
 /* Estilos para a seção 'FOTOS' */
 #fotos {
     padding: 40px 0;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    /* text-align: center; */
-    /* flex-direction: column; */
-    /* align-items: center; */
 }
 
 #fotos h2 {
@@ -264,7 +286,6 @@ nav a:hover {
     font-size: 2em;
     color: #121326;
     margin-bottom: 20px;
-    /* max-width: 600px; */
 }
 
 .fotos-grid {
@@ -273,15 +294,11 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
 }
 
 .fotos-grid img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* width: 100%;
-    height: auto; */
 }
 
 .fotos-container {
@@ -295,6 +312,21 @@ nav a:hover {
 
 #fotos .fotos-btn {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #fotos {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    #fotos .fotos-container {
+        width: 100%;
+    }
+    
+    #fotos .fotos-grid {
+        width: 100%;
+    }
 }
 
 /* Carrossel de fotos */
@@ -430,6 +462,7 @@ nav a:hover {
 #contato button:focus {
     outline: 2px dashed #fff;
     outline-offset: 4px;
+    box-shadow: 0 0 0 3px rgba(81, 45, 168, 0.5); /* Adicionar foco visível */
 }
 
 #contato button:hover {
@@ -472,4 +505,25 @@ footer p {
     .fotos-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+}
+
+/* Estilo para animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+/* Estilo para animação de hover */
+.btn.hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Estilo para carrossel de imagens */
+.mySlides {
+    display: none;
 }

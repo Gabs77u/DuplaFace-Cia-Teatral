@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.3] - 2025-02-13
+
+### Adicionado
+- Melhorias na proporção para dispositivos móveis em `style.css`.
+
+### Changed
+- Ajustes de estilo e layout para melhor responsividade em `style.css`.
+
+## [1.0.2] - 2025-02-12
+### Adicionado
+- Adicionado arquivo de configuração do Live Server `.vscode/settings.json`.
+- Adicionado workflow do GitHub Actions para deploy estático em `.github/workflows/static.yml`.
+
 ## [1.0.1] - 2025-02-10
 ### Adicionado
 
