@@ -1,6 +1,6 @@
 # DuplaFace Cia Teatral
 
-Este é o um prototipo do site oficial da DuplaFace Cia Teatral, uma companhia de teatro fundada por Alan Beltrão e Gabriel Cabral em 2024. O site fornece informações sobre a companhia, espetáculos em cartaz, teasers, fotos e uma seção de contato.
+Este é um protótipo do site oficial da DuplaFace Cia Teatral, uma companhia de teatro fundada por Alan Beltrão e Gabriel Cabral em 2024. O site fornece informações sobre a companhia, espetáculos em cartaz, teasers, fotos e uma seção de contato.
 
 ## Estrutura do Projeto
 
@@ -8,7 +8,8 @@ O projeto é composto pelos seguintes arquivos principais:
 
 - `index.html`: Página principal do site.
 - `style.css`: Arquivo de estilos CSS para a formatação do site.
-- `submit_form.php`: Script para processar o formulário de contato (não incluído neste repositório). [EM DESENVOLVIMENTO]
+- `contact.php`: Script para processar o formulário de contato.
+- `script.js`: Arquivo JavaScript para funcionalidades interativas.
 
 ## Seções do Site
 
@@ -48,7 +49,7 @@ Contém informações de direitos autorais.
 
 - HTML5
 - CSS3
-- JavaScript (opcional para funcionalidades adicionais)
+- JavaScript
 - PHP (para processamento de formulários)
 
 ## Como Executar o Projeto
@@ -57,10 +58,31 @@ Contém informações de direitos autorais.
 2. Abra o arquivo `index.html` em um navegador web para visualizar o site.
 3. Certifique-se de que o servidor PHP esteja configurado para processar o formulário de contato.
 
+## Melhorias Implementadas
+
+- Adição de meta tags para SEO.
+- Melhoria da acessibilidade com atributos ARIA.
+- Implementação do script PHP para processamento do formulário de contato.
+- Otimização de imagens com carregamento preguiçoso.
+- Comentários adicionados para melhorar a navegabilidade do código.
+- Melhorias na proporção para dispositivos móveis.
+
+## Como Contribuir
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
+4. Faça push para a branch (`git push origin feature/nova-feature`).
+5. Crie um novo Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 ## Contato
 
-[EM PROCESSAMENTO]
+Para mais informações, visite nosso [Instagram](https://www.instagram.com/DUPLAFACECIATEATRAL).
 
 &copy; 2024 DuplaFace Cia Teatral. Todos os direitos reservados.
 
-Desenvolvido por: [Em processo de criação]
+Desenvolvido por: Alan Beltrão, Carlos Severiano e Gabriel Araujo.
