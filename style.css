@@ -138,7 +138,6 @@ nav a:hover {
 #em-cartaz .info {
   max-width: 50%;
   text-align: center;
-  margin-bottom: 30px;
   background-color: #5e12c3;
 }
 
@@ -191,10 +190,8 @@ nav a:hover {
     border-radius: 3px;
 }
 
-#em-cartaz .banner img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+#em-cartaz .banner {
+    width: 50%;
     /* border-radius: 10px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
