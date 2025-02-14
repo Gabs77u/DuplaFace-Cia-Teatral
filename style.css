@@ -31,7 +31,6 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    loading: lazy; /* Adicionar carregamento preguiçoso */
 }
 
 /* Estilos para o banner */
